@@ -45,18 +45,29 @@ h1 {
 }
 
 .interaction {
-    border: 1px solid #CDC6AE;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 3px;
-    color: #CDC6AE;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin: 10px;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.1);
+    cursor: default;
+}
+
+.interaction.active {
+    border: 1px solid #CDC6AE;
+    color: #CDC6AE;
+    cursor: pointer;
 }
 
 .interaction:hover {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.interaction.active:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #187795;
 }
